@@ -53,104 +53,98 @@ ol {
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background-color: #D9D9D9;
 }
-.content
-{
+.content {
   display: flex;
   align-items: flex-end;
   width: 1140px;
   gap: 30px;
 }
-.content__details
-{
-max-width: 399px;
+
+.content__details {
+max-width: 400px;
 }
-.title
-{
+
+.title {
   padding-bottom: 20px;
 }
 
-.search-form
-{
+.search-form {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-.content__list-container
-{
+.content__list-container {
   height: 299px;
   overflow-y: auto;
-  overflow-x: hidden;
   position: relative;
+  display: grid;
+  gap: 30px;
+  object-fit: contain;
 }
-.result__video-container
-{
+
+.result__video-container {
   width: 711px;
   height: 386px;
   margin-bottom: 16px;
   position: relative;
 }
-video
-{
+
+video {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.content__list-container
-{
-  display: grid;
-  gap: 30px;
-  object-fit: contain;
-}
-.content__list
-{
+
+.content__list {
   display: grid;
   gap: 30px;
 }
-.content__video-card
-{
+
+.content__video-card {
   display: flex;
   align-items: flex-start;
 }
-.content__video-card-thumbnail
-{
+
+.content__video-card-thumbnail {
   min-width: 194px;
   height: 103px;
   object-fit: cover;
   object-position: center;  
 }
-.content__video-card-description-container
-{
+
+.content__video-card-description-container {
   flex-grow: 1;
   overflow: hidden;
   width: 196px;
 }
-.search-form__fieldset-title
-{
+
+.search-form__fieldset-title {
   font-weight: 400;
   font-size: 18px;
   padding-bottom: 5px;
 }
-.title
-{
-  font-family: 'Oswald', 'bold', 'sans-serif';
+
+.title {
+  font-family: 'Oswald', 'arial', sans-serif;
   font-weight: 700;
   font-size: 75px;
   line-height: 94%;
   text-transform: uppercase;
 }
-.content__accent
-{
+
+.content__accent {
   color: #545050;
 }
-.content__card-link
-{
+
+.content__card-link {
+
   text-decoration: none;
   color: white;
 }
-.content__video-card-title
-{
-  font-family: 'Oswald', 'bold', 'sans-serif';
+
+.content__video-card-title {
+  font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 100%;
@@ -160,9 +154,9 @@ video
   margin-bottom: 5px;
   padding-top: 2px;
 }
-.content__video-card-description
-{
-  font-family: 'Fira Sans Condensed', 'regular', 'sans-serif';
+
+.content__video-card-description {
+  font-family: 'Fira Sans Condensed', 'arial', sans-serif;
   font-size: 18px;
   line-height: 16.2px;
   font-weight: 400;
@@ -171,8 +165,8 @@ video
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.visually-hidden
-{
+
+.visually-hidden {
   position: absolute;
   inline-size: 1px;
   block-size: 1px;
@@ -181,24 +175,24 @@ video
   clip-path: inset(50%);
   white-space: nowrap;
 }
-.search-form__checkbox-list
-{
+
+.search-form__checkbox-list {
   display: flex;
   gap: 15px;
 }
-.search-form__fieldset
-{
+
+.search-form__fieldset {
 border: none;
 }
-.search-form__label
-{
+
+.search-form__label {
   display: flex;
   align-items: center;
   width: fit-content;
   gap: 1.5px;
 }
-.search-form__textfield
-{
+
+.search-form__textfield {
   border: 1px solid #FFF;
   border-left: none;
   border-right: none;
@@ -207,27 +201,27 @@ border: none;
   background-color: transparent;
   width: 225px;
   height: 27px;
-  font-family: 'Fira Sans Condensed', 'regular', 'sans-serif';
+  font-family: 'Fira Sans Condensed', 'arial', sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 100%;
   outline: 2.5px;
 }
-.search-form__textfield::placeholder
-{
+
+.search-form__textfield::placeholder {
   color: rgb(255 255 255 / 0.7);
 }
-.search-form__textfield:focus
-{
+
+.search-form__textfield:focus {
   outline: none;
 }
-.search-form__label:has(:focus-visible)
-{
+
+.search-form__label:has(:focus-visible) {
   outline: 1px solid #FFF;
   outline-offset: 1px;
 }
-.search-form__pseudo-checkbox
-{
+
+.search-form__pseudo-checkbox {
   width: 19px;
   height: 19px;
   border: 1px solid #FFF;
@@ -235,8 +229,8 @@ border: none;
   margin-right: 5px;
   cursor: pointer
 }
-.search-form__pseudo-checkbox::after
-{
+
+.search-form__pseudo-checkbox::after {
   content: '';
   display: block;
   background-color: white;
@@ -244,81 +238,81 @@ border: none;
   height: 100%;
   opacity: 0;
 }
-.search-form__checkbox:checked + .search-form__pseudo-checkbox::after
-{
+
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   position: relative;
   opacity: 1;
 }
-.search-form__label:hover:has(.search-form__checkbox)
-{
+
+.search-form__label:hover:has(.search-form__checkbox) {
   text-decoration: underline
 }
-.button
-{
+
+.button {
   font-size: 18px;
   font-weight: 700;
   line-height: 100%;
   color: #FFF;
   background-color: transparent;
   border: 1px solid #FFF;
-  font-family: 'Fira Sans Condensed', 'regular', 'sans-serif';
+  font-family: 'Fira Sans Condensed', 'arial', sans-serif;
   cursor: pointer
 }
-.search-form__submit-button
-{
+
+.search-form__submit-button {
   width: 194px;
-  height: 34px;
+  min-height: 34px;
   align-self:flex-end
 }
-.more-button
-{
+
+.more-button {
   height: 34px;
   width: 100%;
 }
-.button:hover
-{
+
+.button:hover {
   text-decoration: underline;
 }
-.button:active
-{
+
+.button:active {
   background-color: #545050;
 }
-.button:focus
-{
+
+.button:focus {
   outline: none;
 }
-.button:focus-visible
-{
+
+.button:focus-visible {
   outline: 1px solid #FFF;
   outline-offset: 1px;
 }
-.content__card-link
-{
+
+.content__card-link {
   display: block;
   cursor: pointer
 }
-.content__card-link_current
-{
-  background-color: none;
-}
-.content__card-link:active
-{
+
+.content__card-link_current {
   background-color: #545050;
 }
-.content__card-link:hover
-{
+
+.content__card-link:active {
+  background-color: #545050;
+}
+
+.content__card-link:hover {
   text-decoration: underline;
 }
-.content__card-link:focus
-{
+
+.content__card-link:focus {
   outline: none;
 }
-.content__card-link:focus-visible
-{
+
+.content__card-link:focus-visible {
   outline: 1px solid #FFF;
 }
-.content__list-item
-{
+
+.content__list-item {
   padding-right: 3px;
   padding-left: 3px;
 }
