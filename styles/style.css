@@ -61,7 +61,7 @@ ol {
 }
 
 .content__details {
-max-width: 400px;
+  max-width: 400px;
 }
 
 .title {
@@ -182,7 +182,7 @@ video {
 }
 
 .search-form__fieldset {
-border: none;
+  border: none;
 }
 
 .search-form__label {
